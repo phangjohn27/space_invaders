@@ -54,8 +54,31 @@ GameBasics.prototype.presentPosition = function () {
     return this.positionContainer.length > 0 ? this.positionContainer[this.positionContainer.length  - 1] : null;
 };
 
+//Move to the desired position
+GameBasics.prototype.goToPosition = function(position){
+    //If we're already in a position clear the positionContainer.
+    if(this.presentPosition()){
+        this.positionContainer.length = 0;
+    }
 
+    // If we find an 'entry' in a given position, we call it.
+    if(position.entry){
+        position.entry(play);
+    }
 
+    //Setting the current game position in the positionContainer
+    this.positionContainer.push(position);
+};
+
+//Push our new position into the positionContainer
+GameBasics.prototype.pushPosition = function(position){
+    this.positionContainer.push(position);
+};
+
+//Pop the position from the positionContainer
+GameBasics.prototype.popPosition = function () {
+    this.positionContainer.pop();
+}
 
 
 

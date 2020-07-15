@@ -1,1 +1,5 @@
-# space_invaders
+#Space_Fighters
+
+This project that I am doing simulates the popular 1978 Space Invaders arcade game. The whole setting is that you are one spacecraft in outer space and you have to fend off a hoard of space invaders getting in your way. The space invaders will be an nxn grid that moves left and right and slowly descends if you cannot defeat them all. Help the space crew defeat all the space invaders and score the highest points.
+
+The reason I chose this project is because I enjoy playing games, I believe this is one of the best projects that will show case all the skills that I have learned on web development. It utilizes CSS, HTML, and Vanilla Javascript. Implementing the game engine takes a lot of, if not all, the basic techniques of Javascript in order to fully implement my Space Fighter game.
