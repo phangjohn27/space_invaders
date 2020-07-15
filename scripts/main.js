@@ -70,11 +70,14 @@ GameBasics.prototype.goToPosition = function(position){
     this.positionContainer.push(position);
 };
 
+//How to add new data into the STACK data structure
 //Push our new position into the positionContainer
 GameBasics.prototype.pushPosition = function(position){
     this.positionContainer.push(position);
 };
 
+
+//How to remove the data.
 //Pop the position from the positionContainer
 GameBasics.prototype.popPosition = function () {
     this.positionContainer.pop();
